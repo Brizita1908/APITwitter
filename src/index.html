@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bienvenido a Twitter API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>
+       			
+       			#Cabezera{
+       				font-family:'verdana';
+       				font-size:40px;
+       				font-align:center;
+       				text-shadow:3px 3px 3px rqba(0,0,0,1);
+       				color:blue;
+       				background-color:#4093F3;
+       			}
+       			#Pie{
+       				background-color:#4093F3;
+       			}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="Cabezera" align="center">
+        	<p><img src="twitter.jpeg" width="70px" height="70px" /> API Twitter</p>
+        </div>
+        <div id="Presentacion" align="center">
+        	<p><img src="Quito.gif" width="80px" height="50px" /> Informacion acerca de Movilidad del Distrito Metropolitano de Quito</p>
+        </div>
+        
+        
+        <div id="Contenido" align="center">
+        	<img src="movilidad.jpg" />
+        	<table>
+        		<tr>
+        			<td> </td>
+        			<td> </td>
+        		</tr>
+        		<tr>
+        			<td> Buscar y Filtrar la información en :</td>
+        			<td> </td>
+        		</tr>
+        		<tr>
+        			<td> <form id="Filtro11"> <label>HashTag :</label> </form></td>
+        			<td> <form id="Filtro12" method="post" action="APIHashtag.php" > 
+        				 <input type="text" placeholder="Escriba palabra a filtrar" name="Hashtag" /> 
+        				 <input type="submit" value="#HashTag" />
+        				 </form></td>
+        		</tr>
+        		<tr>
+        			<td> <form id="Filtro21"> <label>Pagina :</label> </form></td>
+        			<td> <form id="Filtro22" method="post" action="APIPagina.php" > 
+        				 <input type="text" placeholder="Escriba palabra a filtrar" name="Pagina"/> 
+        				 <input type="submit" value="Pagina" />
+        				 </form></td>
+        		</tr>
+        	</table>
+        </div>
+        <div id="Pie" align="center">
+        	<p>Información Obtenida de Twitter. Derechos Reservados</p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
